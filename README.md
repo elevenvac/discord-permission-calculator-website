@@ -1,2 +1,8 @@
-# discord-permission-calculator-website
-© Rise Development. (Eleven &amp; Cenap)
+# Discord Permission Calculator Website
+### Contact
+* [Discord](https://discord.gg/T4BMtSu)
+
+### Creators / Developers
+👤 Eleven
+<br>
+👤 Cenap
