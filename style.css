@@ -178,8 +178,8 @@
             position: absolute;
         }
         input[type="checkbox" i]:checked+label:after {
-            background-color: #43b581;
-            border-color: #43b581;
+            background-color: #57F287;
+            border-color: #57F287;
         }
         input[type="checkbox" i]:checked+label:before {
             top: 0;
