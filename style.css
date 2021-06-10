@@ -230,6 +230,9 @@
             -o-user-select: none;
             user-select: none;
         }
+        .custom-hr {
+            border: 1px solid #4b4d4f;
+        }
         @media only screen and (min-width: 640px) {
             .footer {
                 font-size: 1em;
