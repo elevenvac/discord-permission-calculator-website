@@ -130,7 +130,3 @@
 
         syncCheckboxes(+getHash());
         recalculate(null, null, true);
-
-       function f2a() {
-            alert("Permissions written in "Red", require "2 Factor Authentication".");
-       }
