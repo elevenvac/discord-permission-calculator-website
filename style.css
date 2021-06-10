@@ -233,6 +233,9 @@
         .custom-hr {
             border: 1px solid #888888;
         }
+        .red-f2a {
+            color: #ED4245;
+        }
         @media only screen and (min-width: 640px) {
             .footer {
                 font-size: 1em;
