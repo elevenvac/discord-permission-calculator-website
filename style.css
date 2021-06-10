@@ -231,7 +231,7 @@
             user-select: none;
         }
         .custom-hr {
-            border: 1px solid #4b4d4f;
+            border: 1px solid #757575;
         }
         @media only screen and (min-width: 640px) {
             .footer {
