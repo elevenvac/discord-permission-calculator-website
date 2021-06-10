@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-B9BoFFAuBaCfqw6lxWBZrhg/z4NkwqdBci+E+Sc2XlK/Rz25RYn8Fetb+Aw5irxa" crossorigin="anonymous">
       <script src="script.js" async></script>
       <link rel="stylesheet" href="style.css" >
-      <title>Permissions Calculator - discordapi.js.org</title>
+      <title>Permissions Calculator - Discord | Unofficial</title>
    </head>
    <body class="select-none" draggable="false">
       <div class="header">
@@ -42,152 +42,159 @@
             </div>
             </p>
          </div>
-         <div class="selector">
-            <div class="col-me-maybe">
-               <h3>
-                  General Permissions
-                  <hr>
-               </h3>
-               <ul>
-                  <li>
-                     <input id="generalAdministrator" type="checkbox" onclick="recalculate()">
-                     <label class="orangutan-not-orange" for="generalAdministrator">Administrator</label>
-                  </li>
-                  <li>
-                     <input id="generalViewAuditLog" type="checkbox" onclick="recalculate()">
-                     <label for="generalViewAuditLog">View Audit Log</label>
-                  </li>
-                  <li>
-                     <input id="generalManageServer" type="checkbox" onclick="recalculate()">
-                     <label class="orangutan-not-orange" for="generalManageServer">Manage Server</label>
-                  </li>
-                  <li>
-                     <input id="generalManageRoles" type="checkbox" onclick="recalculate()">
-                     <label class="orangutan-not-orange" for="generalManageRoles">Manage Roles</label>
-                  </li>
-                  <li>
-                     <input id="generalManageChannels" type="checkbox" onclick="recalculate()">
-                     <label class="orangutan-not-orange" for="generalManageChannels">Manage Channels</label>
-                  </li>
-                  <li>
-                     <input id="generalKickMembers" type="checkbox" onclick="recalculate()">
-                     <label class="orangutan-not-orange" for="generalKickMembers">Kick Members</label>
-                  </li>
-                  <li>
-                     <input id="generalBanMembers" type="checkbox" onclick="recalculate()">
-                     <label class="orangutan-not-orange" for="generalBanMembers">Ban Members</label>
-                  </li>
-                  <li>
-                     <input id="generalCreateInstantInvite" type="checkbox" onclick="recalculate()">
-                     <label for="generalCreateInstantInvite">Create Instant Invite</label>
-                  </li>
-                  <li>
-                     <input id="generalChangeNickname" type="checkbox" onclick="recalculate()">
-                     <label for="generalChangeNickname">Change Nickname</label>
-                  </li>
-                  <li>
-                     <input id="generalManageNicknames" type="checkbox" onclick="recalculate()">
-                     <label for="generalManageNicknames">Manage Nicknames</label>
-                  </li>
-                  <li>
-                     <input id="generalManageEmojis" type="checkbox" onclick="recalculate()">
-                     <label for="generalManageEmojis">Manage Emojis</label>
-                  </li>
-                  <li>
-                     <input id="generalManageWebhooks" type="checkbox" onclick="recalculate()">
-                     <label class="orangutan-not-orange" for="generalManageWebhooks">Manage Webhooks</label>
-                  </li>
-               </ul>
-            </div>
-            <div class="col-me-maybe">
-               <h3>
-                  Text Permissions
-                  <hr>
-               </h3>
-               <ul>
-                  <li>
-                     <input id="textReadMessages" type="checkbox" onclick="recalculate(this)">
-                     <label for="textReadMessages">Read Messages</label>
-                  </li>
-                  <li>
-                     <input id="textSendMessages" type="checkbox" onclick="recalculate()">
-                     <label for="textSendMessages">Send Messages</label>
-                  </li>
-                  <li>
-                     <input id="textSendTTSMessages" type="checkbox" onclick="recalculate()">
-                     <label for="textSendTTSMessages">Send TTS Messages</label>
-                  </li>
-                  <li>
-                     <input id="textManageMessages" type="checkbox" onclick="recalculate()">
-                     <label class="orangutan-not-orange" for="textManageMessages">Manage Messages</label>
-                  </li>
-                  <li>
-                     <input id="textEmbedLinks" type="checkbox" onclick="recalculate()">
-                     <label for="textEmbedLinks">Embed Links</label>
-                  </li>
-                  <li>
-                     <input id="textAttachFiles" type="checkbox" onclick="recalculate()">
-                     <label for="textAttachFiles">Attach Files</label>
-                  </li>
-                  <li>
-                     <input id="textReadMessageHistory" type="checkbox" onclick="recalculate()">
-                     <label for="textReadMessageHistory">Read Message History</label>
-                  </li>
-                  <li>
-                     <input id="textMentionEveryone" type="checkbox" onclick="recalculate()">
-                     <label for="textMentionEveryone">Mention @everyone, @here, and All Roles</label>
-                  </li>
-                  <li>
-                     <input id="textUseExternalEmojis" type="checkbox" onclick="recalculate()">
-                     <label for="textUseExternalEmojis">Use External Emojis</label>
-                  </li>
-                  <li>
-                     <input id="textAddReactions" type="checkbox" onclick="recalculate()">
-                     <label for="textAddReactions">Add Reactions</label>
-                  </li>
-               </ul>
-            </div>
-            <div class="col-me-maybe">
-               <h3>
-                  Voice Permissions
-                  <hr>
-               </h3>
-               <ul>
-                  <li>
-                     <input id="voiceViewChannel" type="checkbox" onclick="recalculate(this)">
-                     <label for="voiceViewChannel">View Channel</label>
-                  </li>
-                  <li>
-                     <input id="voiceConnect" type="checkbox" onclick="recalculate()">
-                     <label for="voiceConnect">Connect</label>
-                  </li>
-                  <li>
-                     <input id="voiceMuteMembers" type="checkbox" onclick="recalculate()">
-                     <label for="voiceMuteMembers">Mute Members</label>
-                  </li>
-                  <li>
-                     <input id="voiceMoveMembers" type="checkbox" onclick="recalculate()">
-                     <label for="voiceMoveMembers">Move Members</label>
-                  </li>
-                  <li>
-                     <input id="voiceSpeak" type="checkbox" onclick="recalculate()">
-                     <label for="voiceSpeak">Speak</label>
-                  </li>
-                  <li>
-                     <input id="voiceDeafenMembers" type="checkbox" onclick="recalculate()">
-                     <label for="voiceDeafenMembers">Deafen Members</label>
-                  </li>
-                  <li>
-                     <input id="voiceUseVAD" type="checkbox" onclick="recalculate()">
-                     <label for="voiceUseVAD">Use Voice Activity</label>
-                  </li>
-                  <li>
-                     <input id="voicePrioritySpeaker" type="checkbox" onclick="recalculate()">
-                     <label for="voicePrioritySpeaker">Priority Speaker</label>
-                  </li>
-               </ul>
-            </div>
-         </div>
+<div class="selector">
+<div class="col-me-maybe">
+<h3>General Permissions</h3>
+<ul>
+<li>
+<input id="generalAdministrator" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange" for="generalAdministrator">Administrator</label>
+</li>
+<li>
+<input id="generalManageChannels" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange" for="generalManageChannels">Manage Channels</label>
+</li>
+<li>
+<input id="generalManageRoles" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange" for="generalManageRoles">Manage Roles</label>
+</li>
+<li>
+<input id="generalManageEmojis" type="checkbox" onclick="recalculate()">
+<label for="generalManageEmojis">Manage Emojis</label>
+</li>
+<li>
+<input id="generalViewAuditLog" type="checkbox" onclick="recalculate()">
+<label for="generalViewAuditLog">View Audit Log</label>
+</li>
+<li>
+<input id="generalViewGuildInsights" type="checkbox" onclick="recalculate()">
+<label for="generalViewGuildInsights">View Server Insights</label>
+</li>
+<li>
+<input id="generalManageWebhooks" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange" for="generalManageWebhooks">Manage Webhooks</label>
+</li>
+<li>
+<input id="generalManageGuild" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange" for="generalManageGuild">Manage Server</label>
+</li>
+<li>
+<input id="generalCreateInvite" type="checkbox" onclick="recalculate()">
+<label for="generalCreateInvite">Create Invite</label>
+</li>
+<li>
+<input id="generalChangeNickname" type="checkbox" onclick="recalculate()">
+<label for="generalChangeNickname">Change Nickname</label>
+</li>
+<li>
+<input id="generalManageNicknames" type="checkbox" onclick="recalculate()">
+<label for="generalManageNicknames">Manage Nicknames</label>
+</li>
+<li>
+<input id="generalKickMembers" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange" for="generalKickMembers">Kick Members</label>
+</li>
+<li>
+<input id="generalBanMembers" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange" for="generalBanMembers">Ban Members</label>
+</li>
+</ul>
+</div>
+<div class="col-me-maybe">
+<h3>Text Permissions</h3>
+<ul>
+<li>
+<input id="textReadMessages" type="checkbox" onclick="recalculate(this)">
+<label for="textReadMessages">Read Messages</label>
+</li>
+<li>
+<input id="textSendMessages" type="checkbox" onclick="recalculate()">
+<label for="textSendMessages">Send Messages</label>
+</li>
+<li>
+<input id="textEmbedLinks" type="checkbox" onclick="recalculate()">
+<label for="textEmbedLinks">Embed Links</label>
+</li>
+<li>
+<input id="textAttachFiles" type="checkbox" onclick="recalculate()">
+<label for="textAttachFiles">Attach Files</label>
+</li>
+<li>
+<input id="textAddReactions" type="checkbox" onclick="recalculate()">
+<label for="textAddReactions">Add Reactions</label>
+</li>
+<li>
+<input id="textUseExternalEmojis" type="checkbox" onclick="recalculate()">
+<label for="textUseExternalEmojis">Use External Emojis</label>
+</li>
+<li>
+<input id="textMentionEveryone" type="checkbox" onclick="recalculate()">
+<label for="textMentionEveryone">Mention @everyone, @here, and All Roles</label>
+</li>
+<li>
+<input id="textManageMessages" type="checkbox" onclick="recalculate()">
+<label class="orangutan-not-orange" for="textManageMessages">Manage Messages</label>
+</li>
+<li>
+<input id="textReadMessageHistory" type="checkbox" onclick="recalculate()">
+<label for="textReadMessageHistory">Read Message History</label>
+</li>
+<li>
+<input id="textSendTTSMessages" type="checkbox" onclick="recalculate()">
+<label for="textSendTTSMessages">Send TTS Messages</label>
+</li>
+<li>
+<input id="textUseSlashCommands" type="checkbox" onclick="recalculate()">
+<label for="textUseSlashCommands">Use Slash Commands</label>
+</li>
+</ul>
+</div>
+<div class="col-me-maybe">
+<h3>Voice Permissions</h3>
+<ul>
+<li>
+<input id="voiceViewChannel" type="checkbox" onclick="recalculate(this)">
+<label for="voiceViewChannel">View Channel</label>
+</li>
+<li>
+<input id="voiceConnect" type="checkbox" onclick="recalculate()">
+<label for="voiceConnect">Connect</label>
+</li>
+<li>
+<input id="voiceSpeak" type="checkbox" onclick="recalculate()">
+<label for="voiceSpeak">Speak</label>
+</li>
+<li>
+<input id="voiceStream" type="checkbox" onclick="recalculate()">
+<label for="voiceStream">Video</label>
+</li>
+<li>
+<input id="voiceUseVAD" type="checkbox" onclick="recalculate()">
+<label for="voiceUseVAD">Use Voice Activity</label>
+</li>
+<li>
+<input id="voicePrioritySpeaker" type="checkbox" onclick="recalculate()">
+<label for="voicePrioritySpeaker">Priority Speaker</label>
+</li>
+<li>
+<input id="voiceMuteMembers" type="checkbox" onclick="recalculate()">
+<label for="voiceMuteMembers">Mute Members</label>
+</li>
+<li>
+ <input id="voiceDeafenMembers" type="checkbox" onclick="recalculate()">
+<label for="voiceDeafenMembers">Deafen Members</label>
+</li>
+<li>
+<input id="voiceMoveMembers" type="checkbox" onclick="recalculate()">
+<label for="voiceMoveMembers">Move Members</label>
+</li>
+<li>
+<input id="voiceStageRequestSpeak" type="checkbox" onclick="recalculate()">
+<label for="voiceStageRequestSpeak">Request to Speak</label>
+</li>
+</ul>
+</div>
+</div>
          <br>
          <center>
             <a href="https://discord.gg/T4BMtSu" target="_blank"><img src="https://discordapp.com/api/guilds/683005629836951799/embed.png?style=banner2" style="border-radius:4px"></a>
