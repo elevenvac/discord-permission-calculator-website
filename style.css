@@ -236,6 +236,9 @@
         .red-f2a {
             color: #ED4245;
         }
+        .f2a-text-r {
+            color: #888888;
+        }
         @media only screen and (min-width: 640px) {
             .footer {
                 font-size: 1em;
