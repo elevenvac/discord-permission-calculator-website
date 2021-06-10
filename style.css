@@ -219,6 +219,13 @@
             z-index: 0;
             min-height: calc(100vh - 3em - 3em);
         }
+        img {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
         @media only screen and (min-width: 640px) {
             .footer {
                 font-size: 1em;
