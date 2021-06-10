@@ -90,11 +90,19 @@
             text-decoration: none;
             z-index: 1;
         }
-        .header .left-link {
-            float: left;
-            padding: .75em 1em;
-            text-decoration: none;
-            z-index: 1;
+        .header .right-link.eyes {
+            padding: 0 .5em;
+        }
+        .header .eyes img {
+            height: 100%;
+            width: auto;
+
+            max-height: 3rem;
+            max-width: 100%;
+
+            object-fit: contain;
+
+            vertical-align: middle;
         }
         .header .title {
             font-size: 1.5rem;
