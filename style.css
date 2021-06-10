@@ -44,7 +44,7 @@
             background-color: transparent;
             border: none;
             border-bottom: 2px solid #5865F2;
-            color: #000;
+            color: #23272a;
             outline: none;
             padding: .25em;
         }
@@ -187,8 +187,8 @@
             width: .2em;
             height: .6em;
             border-top: .2em solid transparent;
-            border-right: .2em solid #000;
-            border-bottom: .2em solid #000;
+            border-right: .2em solid #23272a;
+            border-bottom: .2em solid #23272a;
             border-left: .2em solid transparent;
             transform: rotateZ(45deg);
             transform-origin: 100% 100%;
